@@ -1,5 +1,7 @@
 # Smartfire
 
+[Voir le projet en ligne](https://smartfire.vercel.app/)
+
 ## Introduction
 
 Ce projet est une implémentation d'un menu WordPress personnalisé respectant la maquette fournie sur Figma. L'objectif était de créer un menu performant, modulaire et esthétiquement fidèle aux spécifications demandées.
