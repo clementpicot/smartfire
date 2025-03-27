@@ -10,9 +10,11 @@ import { MenuItem } from "../layout/main-nav";
 export default function NavItem({
   item,
   className,
+  onClick,
   ...delegated
 }: {
   item: MenuItem;
+  onClick?: () => void;
   className?: string | undefined;
 }) {
   const pathname = usePathname();
@@ -20,6 +22,7 @@ export default function NavItem({
   return (
     <div
       className={cn("max-w-75", item.acf?.image && "max-w-58", className)}
+      onClick={onClick}
       {...delegated}
     >
       {item.acf?.image ? (
