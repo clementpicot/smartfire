@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: 'http',
         hostname: 'hello.local'
       },
+      {
+        protocol: 'https',
+        hostname: 'smartfire.clmntpct.xyz'
+      },
     ],
   },
 };
