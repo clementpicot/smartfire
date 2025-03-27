@@ -13,7 +13,7 @@ export default function NavItem({
   ...delegated
 }: {
   item: MenuItem;
-  className?: string;
+  className?: string | undefined;
 }) {
   const pathname = usePathname();
 

@@ -298,7 +298,7 @@ export default function MainNav() {
 
   return (
     <div ref={ref}>
-      <nav className="py-4 px-6 md:py-7.5 md:px-10 flex items-center">
+      <nav className="py-4 px-6 md:py-8 md:px-10 flex items-center">
         <ul>
           <li>
             <Link href="/">
@@ -315,7 +315,7 @@ export default function MainNav() {
         </ul>
 
         {/* Desktop Navigation */}
-        <ul className="items-center hidden lg:flex lg:gap-4 xl:gap-7.5 ml-auto uppercase font-bold text-xs *:hover:text-primary">
+        <ul className="items-center hidden lg:flex lg:gap-4 xl:gap-8 ml-auto uppercase font-bold text-xs *:hover:text-primary">
           {menu.primary.map((item: MenuItem) => {
             if (item.url) {
               return (
@@ -440,7 +440,7 @@ export default function MainNav() {
                     <motion.div
                       id={`${item.title}-menu`}
                       key={item.title}
-                      className="grid gap-17.5 grid-cols-4"
+                      className="grid gap-18 grid-cols-4"
                       variants={menuAnimations.container}
                     >
                       {item.children?.map((subItem: MenuItem) => (
