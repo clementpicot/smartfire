@@ -46,16 +46,16 @@ Le menu est également entièrement responsive.
 ## Fonctionnalités
 
 - ✔ **Mega-menu au clic** : Les éléments avec enfants s'affichent sous forme de mega-menu
-- ✔ **Accessible** : Le menu est entièrement accessible et respecte les standards moderne d'accesibilité
+- ✔ **Accessible** : Le menu est entièrement accessible et respecte les standards moderne d'accessibilité
 - ✔ **Administrable** : Tous les éléments du méga-menu sont administrables, il n'y a pas besoin de toucher au code
 - ✔ **Indication visuelle** : L'élément actif est mis en évidence
-- ✔ **Animations fluides** : Transitions élégantes grâce à Framer Motion
+- ✔ **Animations fluides** : Transitions grâce à Motion
 - ✔ **Responsive (optionnel)** : Le méga-menu est entièrement responsive
 - ✔ **Compatibilité navigateurs** : Testé sur Chrome, Firefox, Safari et Edge
 
 ---
 
-## 🎬 Explication des choix techniques
+## Explication des choix techniques
 
 ### 1️⃣ Next.js 15
 
@@ -84,7 +84,7 @@ Les menus sont récupérés dynamiquement via l'API REST de WordPress. J'ai mis 
 J'ai déployé le WordPress avec le menu administrable sur l'URL suivante : [Wordpress en ligne](https://smartfire.clmntpct.xyz/wp-admin)
 Les identifiants de l'admin se trouvent dans le mail que je vous ai envoyé!
 
-1. Cloner le projet Next.js (J'ai volontairement commit le .env.local pour simplifier les tests de votre côté, pas d'inquiétude!)
+1. Cloner le projet Next.js
 2. Ajouter la variable d'environnement `NEXT_PUBLIC_WORDPRESS_URL=https://smartfire.clmntpct.xyz` dans le fichier `.env.local` à la racine du projet pour faire le pont entre WordPress et le front.
 3. Lancer le projet via `npm run dev` et observez le menu généré dynamiquement.
 4. (Optionnel) Si vous souhaitez modifier le menu directement, rendez-vous sur l'admin du WordPress puis dans Apparence > Menus.
@@ -103,7 +103,7 @@ Exemples :
 
 ## Amélioration souhaitées
 
-- J'aurais aimé refacto le code de **main-nav.tsx** que je ne trouve pas assez modulaire, le séparer en petits composants et permettre une lecture claire du fichier.
+- J'aurais aimé refacto le code de **main-nav.tsx** que je ne trouve pas assez modulaire, je pense pouvoir le séparer en composants et permettre une lecture claire du fichier. On pourra en débriefer ensemble!
 - Améliorer l'UI globale de la version mobile
 
 ---
@@ -182,7 +182,7 @@ LEFT JOIN wp_posts ON wp_users.ID = wp_posts.post_author
 WHERE wp_posts.ID IS NULL;
 ```
 
-### 3. Requête avancée
+### 3. Requête avancée (IA utitlisée)
 
 - Écrivez une requête SQL pour obtenir un rapport des ventes mensuelles pour l'année 2023, avec les informations suivantes : Mois (au format 'YYYY-MM'), nombre total de commandes, montant total des ventes, panier moyen, produit le plus vendu du mois (nom du produit).
 ```bash
