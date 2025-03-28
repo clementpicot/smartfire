@@ -103,7 +103,6 @@ Exemples :
 
 ## Amélioration souhaitées
 
-- J'aurais aimé refacto le code de **main-nav.tsx** que je ne trouve pas assez modulaire, je pense pouvoir le séparer en composants et permettre une lecture claire du fichier. On pourra en débriefer ensemble!
 - Améliorer l'UI globale de la version mobile
 
 ---
