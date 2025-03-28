@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
+import { cn } from "@/lib/utils";
+import { MenuItem } from "@/types/menu";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
-import { MenuItem } from "../layout/main-nav";
 
 export default function NavItem({
   item,

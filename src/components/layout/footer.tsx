@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Logo from './logo'
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className='md:flex justify-between gap-8 py-10 px-6 md:px-10'>
             <div className='sm:flex items-center gap-8'>
                 <div>
-                    <Image src="/logo-invert.svg" alt="" width={75} height={30} />
+                    <Logo variant='invert' />
                 </div>
                 <p className='text-white text-xs font-medium mt-4 sm:mt-0'>© 2025 Repubic GROUP Trademarks and brands are the property of their respective owners.</p>
             </div>
